@@ -2,7 +2,7 @@
 
 <a href="/flairNLP/flair/blob/master/CONTRIBUTING.md"><img src="https://camo.githubusercontent.com/8f697c48adc5026cc6d83dd45e42b9b93ee1803c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f6e747269627574696f6e732d77656c636f6d652d627269676874677265656e2e737667" alt="Contributions welcome" data-canonical-src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg" style="max-width:100%;"></a> <a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://camo.githubusercontent.com/a2753323735099059bdc88b724534a1a6bd134ee/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d627269676874677265656e2e737667" alt="License: MIT" data-canonical-src="https://img.shields.io/badge/License-MIT-brightgreen.svg" style="max-width:100%;"></a>
 
-This repository contains source code for searching covid-19 relevant papers based on the [COVID-19 Open Research Dataset (CORD-19)](https://pages.semanticscholar.org/coronavirus-research). The repository also provides a solution to the tasks in [COVID-19 Open Research Dataset Challenge on Kaggle (CORD-19)](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge). Update: 2020-03-30
+This repository contains source code for searching covid-19 relevant papers based on the [COVID-19 Open Research Dataset (CORD-19)](https://pages.semanticscholar.org/coronavirus-research). The repository also provides a solution to the tasks in [COVID-19 Open Research Dataset Challenge on Kaggle (CORD-19)](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge). Update: 2020-03-30.
 
 
 
@@ -10,15 +10,15 @@ This repository contains source code for searching covid-19 relevant papers base
 - Support multiple bag-of-words models (count, tf-idf, bm25).
 - Support semantic search models such as fasttext, glove.
 - Enable to combine the aforementioned two types of models.
-- Provide a live web application that users can customize models for end-users.
+- Provide a live web application that can be customized models for end-users.
 
 ### Examples
-- [Bag-of-words search](full_text_run.py) # include count, tf-idf, and bm25
-- [Embedding-based search](embedding_run.py) # include fasttext, glove
-- [Model Combinations](ensemble_run.py) # combination of the aforementioned two types
+- [Bag-of-words search](examples/full_text_run.py) # include count, tf-idf, and bm25
+- [Embedding-based search](examples/embedding_run.py) # include fasttext, glove
+- [Model Combinations](examples/ensemble_run.py) # combination of the aforementioned two types
 
 
-- [Insights Extraction](sentence_level_run.py) # this corresponds to tackle [the tasks in kaggle](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks)
+- [Insights Extraction](examples/sentence_level_run.py) # this corresponds to tackle [the tasks in kaggle](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks)
 
 
 ### Quick Start
