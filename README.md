@@ -4,8 +4,6 @@
 
 This repository contains source code for searching covid-19 relevant papers based on the [COVID-19 Open Research Dataset (CORD-19)](https://pages.semanticscholar.org/coronavirus-research). The repository also provides a solution to the tasks in [COVID-19 Open Research Dataset Challenge on Kaggle (CORD-19)](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge). Update: 2020-03-30.
 
-
-
 ### Features
 - Support multiple bag-of-words models (count, tf-idf, bm25).
 - Support semantic search models such as fasttext, glove.
@@ -52,7 +50,7 @@ Here just uses the count bag-of-words model as an example. For customisation, ha
 ```
 python app.py
 ```
-Go browser via http://127.0.0.1:5000, the web application is as follows. Here is a [live demo](#) that is available at this moment.
+Go browser via http://127.0.0.1:5000, the web application is as follows. Here is a [live demo](http://www.congcong.cf:7000/) that is available at this moment.
 
 ![](pics/demo.gif)
 
