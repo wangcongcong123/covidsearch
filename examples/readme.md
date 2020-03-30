@@ -5,4 +5,4 @@
 - [Model Combinations](ensemble_run.py) # combination of the aforementioned two types
 
 ###
-- [Insights Extraction](sentence_level_run.py) # this corresponds to tackle [the tasks in kaggle](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks)
+- [Insights Extraction](insight_extract.py) # this corresponds to tackle [the tasks in kaggle](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks)

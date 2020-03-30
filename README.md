@@ -10,13 +10,13 @@ This repository contains source code for searching covid-19 relevant papers base
 - Enable to combine the aforementioned two types of models.
 - Provide a live web application that can be customized models for end-users.
 
-### Examples
+### [Examples](examples/)
 - [Bag-of-words search](examples/full_text_run.py) # include count, tf-idf, and bm25
 - [Embedding-based search](examples/embedding_run.py) # include fasttext, glove
 - [Model Combinations](examples/ensemble_run.py) # combination of the aforementioned two types
 
 
-- [Insights Extraction](examples/sentence_level_run.py) # this corresponds to tackle [the tasks in kaggle](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks)
+- [Insights Extraction](examples/insight_extract.py) # this corresponds to tackle [the tasks in kaggle](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks)
 
 
 ### Quick Start
