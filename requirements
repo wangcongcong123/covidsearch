@@ -1,0 +1,11 @@
+flair
+sklearn
+gensim
+tqdm
+pandas
+nltk
+numpy
+scipy
+SentenceTransformer
+flask
+flask_cors
