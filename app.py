@@ -68,11 +68,6 @@ def get_insights_results(task_name, top_k=20, second_filter=["covid-19"]):
     return top_similar_filtered[:selected_num]
 
 
-@app.route('/')
-def hello_world():
-    return render_template('layout.html')
-
-
 @app.route('/search', methods=["GET", "POST"])
 @cross_origin(supports_credentials=True)
 def search():
@@ -89,13 +84,6 @@ def search():
 def getKaggleTaskInsights():
     task_name = request.get_json()["task_name"]
     return json.dumps({"response": "Insights Return", "result": get_insights_results(task_name, top_k=100)})
-
-@app.route('/json', methods=["GET", "POST"])
-@cross_origin(supports_credentials=True)
-def getJson():
-    json_ = {each.split("=")[0]: each.split("=")[1] for each in request.data.decode("utf-8").split("&")}
-    print(json_)
-    return json.dumps({"hello": 2, "world": 2, "result": "dsss"})
 
 if __name__ == '__main__':
     app.run(debug=False, host="0.0.0.0")
