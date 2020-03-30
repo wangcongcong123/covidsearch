@@ -35,6 +35,7 @@ dataset_folder = "dataset/"
 # load metadata and full texts of papers
 metadata = load_metadata_papers(dataset_folder, "metadata.csv")
 full_papers = load_full_papers(dataset_folder)
+# full_input_instances include title, abstract, body text
 full_input_instances = [(id_, metadata[id_]["title"], metadata[id_]["abstract"], body) for id_, body in
                         full_papers.items() if id_ in metadata]
 tfidf_model = FullTextModel(full_input_instances, weights=[3, 2, 1], vectorizer_type="tfidf")
