@@ -77,6 +77,9 @@ def search():
         return json.dumps({"response": "Not Found", "result": "not found this type of model.."})
     results = str2model[model_type].query(query, top_k=20)
     return json.dumps({"response": "Search Results", "result": parse_search_results(results)})
+@app.route('/')
+def hello_world():
+    return render_template('layout.html')
 
 
 @app.route('/kaggle_task', methods=["GET", "POST"])
