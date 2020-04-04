@@ -50,7 +50,7 @@ Here just uses the count bag-of-words model as an example. For customisation, ha
 ```
 python app.py
 ```
-Go browser via http://127.0.0.1:5000, the web application is as follows. Here is a [live demo](http://www.congcong.cf:7000/) that is available at this moment.
+Go browser via http://127.0.0.1:5000, the web application is as follows. Here is a [live demo](http://www.congcong.cf/) that is available at this moment.
 
 ![](pics/demo.gif)
 
