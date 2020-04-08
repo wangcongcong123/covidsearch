@@ -1,2 +1,4 @@
 vev/
 flair/
+dataset/*.gz
+dataset/*.pkl

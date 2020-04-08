@@ -1,7 +1,7 @@
 from cord import *
 
 # make sure put the paper collections (four .tar.gz files) and medataset csv file under the dataset_folder
-dataset_folder = "dataset/"
+dataset_folder = "../dataset/"
 # load metadata and full texts of papers
 metadata = load_metadata_papers(dataset_folder, "metadata.csv")
 full_papers = load_full_papers(dataset_folder)
@@ -12,10 +12,10 @@ full_input_instances=[(id_,metadata[id_]["title"],metadata[id_]["abstract"],body
 abstract_input_instances = [(id_, metadata[id_]["title"], metadata[id_]["abstract"]) for id_, body in
                             full_papers.items() if id_ in metadata]
 
-bm25 = FullTextModel(full_input_instances, weights=[3, 2, 1],default_save="models_save/fulltext",vectorizer_type="bm25")
+bm25 = FullTextModel(full_input_instances, weights=[3, 2, 1],default_save="../models_save/fulltext",vectorizer_type="bm25")
 
-fasttext = WordEmbeddingModel(abstract_input_instances, weights=[1, 1], embedding_list=["glove"],
-                              fasttext_path="models_save/fasttext.bin")
+fasttext = WordEmbeddingModel(abstract_input_instances, weights=[1, 1], embedding_list=["glove"],default_save="../models_save/wordembeddingmodel",
+                              fasttext_path="../models_save/fasttext.bin")
 # combine bm25 and fasttext and give equal importance to each model
 ensemble=EnsembleModel(model_list=[bm25,fasttext],weights=[1,1])
 

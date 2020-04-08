@@ -1,7 +1,7 @@
 from cord import *
 
 # make sure put the paper collections (four .tar.gz files) and medataset csv file under the dataset_folder
-dataset_folder = "dataset/"
+dataset_folder = "../dataset/"
 # load metadata and full texts of papers
 metadata = load_metadata_papers(dataset_folder, "metadata.csv")
 full_papers = load_full_papers(dataset_folder)
@@ -16,9 +16,9 @@ abstract_input_instances = [(id_, metadata[id_]["title"], metadata[id_]["abstrac
 
 # create two variants of tfidf model that applies full_input_instances and abstract_input_instances respectively
 # vectorizer_type can also be count ot bm25
-tfidf_full = FullTextModel(full_input_instances, weights=[3, 2, 1], vectorizer_type="tfidf")
+tfidf_full = FullTextModel(full_input_instances, weights=[3, 2, 1], vectorizer_type="tfidf",default_save="../models_save/fulltext")
 # the weights argument specifies the importance of each element in the instances list ([1,1] denotes the equal importance to title and abstract in the following case)
-tfidf_abstract = FullTextModel(abstract_input_instances, weights=[1, 1], vectorizer_type="tfidf")
+tfidf_abstract = FullTextModel(abstract_input_instances, weights=[1, 1], vectorizer_type="tfidf",default_save="../models_save/fulltext")
 
 # here we use tfidf_full as an example to query
 query = "covid-19 transmission characteristics"

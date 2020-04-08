@@ -1,7 +1,7 @@
 from cord import *
 
 # make sure put the paper collections (four .tar.gz files) and medataset csv file under the dataset_folder
-dataset_folder = "dataset/"
+dataset_folder = "../dataset/"
 # load metadata and full texts of papers
 metadata = load_metadata_papers(dataset_folder, "metadata.csv")
 full_papers = load_full_papers(dataset_folder)
@@ -15,11 +15,11 @@ abstract_input_instances = [(id_, metadata[id_]["title"], metadata[id_]["abstrac
 '''
 full_input_instances = [(id_, metadata[id_]["title"], metadata[id_]["abstract"], body) for id_, body in
                         full_papers.items() if id_ in metadata]
-model = FullTextModel(full_input_instances, weights=[1, 1, 1],default_save="models_save/fulltext",vectorizer_type="count")
+model = FullTextModel(full_input_instances, weights=[1, 1, 1],default_save="../models_save/fulltext",vectorizer_type="count")
 model.save_corpus("corpus.txt")
 '''
 # Here assume there is pre-trained fasttext.bin under models_save folder,
-fasttext = WordEmbeddingModel(abstract_input_instances, weights=[1,1],embedding_list=["fasttext"],fasttext_path="models_save/fasttext.bin")
+fasttext = WordEmbeddingModel(abstract_input_instances, weights=[1,1],embedding_list=["fasttext"],default_save="../models_save/wordembeddingmodel",fasttext_path="../models_save/fasttext.bin")
 
 # here provides an example to query
 query = "covid-19 transmission characteristics"

@@ -1,7 +1,7 @@
 from cord import *
 
 # make sure put the paper collections (four .tar.gz files) and medataset csv file under the dataset_folder
-dataset_folder = "dataset/"
+dataset_folder = "../dataset/"
 # load metadata and full texts of papers
 metadata = load_metadata_papers(dataset_folder, "metadata.csv")
 full_papers = load_full_papers(dataset_folder)
@@ -29,7 +29,7 @@ print("Mining time: ",time.time()-start)
 
 ========== insight mining =====
 """
-results = SentenceSearch.load_from_save(save_path="models_save/sentencesearch/-results_save.pkl")
+results = SentenceSearch.load_from_save(save_path="../models_save/sentencesearch/-results_save.pkl")
 
 for task_name, top_similar_sentences in results.items():
     print("==============Sentence Query:" + kaggle_tasks[task_name] + "======================")
