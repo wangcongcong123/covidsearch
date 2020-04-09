@@ -50,7 +50,7 @@ Here just demonstrating pre-trained insights as an example. For customisation (q
 ```
 python app.py
 ```
-Go browser via http://127.0.0.1:5000, the web application is as follows. Here is a [live demo](http://www.congcong.cf/) that is available at this moment.
+Go browser via http://127.0.0.1:5000, the web application is as follows.
 
 ![](pics/demo.gif)
 
