@@ -2,3 +2,4 @@ vev/
 flair/
 dataset/*.gz
 dataset/*.pkl
+dataset/*.csv

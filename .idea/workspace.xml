@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f707bb45-9068-44c8-b816-9f8275d68224" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dataset/biorxiv_medrxiv.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/comm_use_subset.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/custom_license.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/metadata.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/noncomm_use_subset.tar.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/embedding_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/embedding_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/ensemble_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/ensemble_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/full_text_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/full_text_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/insight_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/insight_extract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models_save/sentencesearch/-results_save.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models_save/sentencesearch/-embeddings.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +96,7 @@
       <workItem from="1585589268655" duration="9916000" />
       <workItem from="1585773645989" duration="35000" />
       <workItem from="1586177455344" duration="777000" />
-      <workItem from="1586178620106" duration="7156000" />
+      <workItem from="1586178620106" duration="14241000" />
     </task>
     <servers />
   </component>

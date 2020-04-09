@@ -16,15 +16,16 @@ abstract_input_instances = [(id_, metadata[id_]["title"], metadata[id_]["abstrac
 
 # count = FullTextModel(full_input_instances, weights=[3, 2, 1],default_save="models_save/fulltext",vectorizer_type="count")
 
-tfidf = FullTextModel(full_input_instances, weights=[3, 2, 1], default_save="models_save/fulltext",
-                      vectorizer_type="tfidf")
+# tfidf = FullTextModel(full_input_instances, weights=[3, 2, 1], default_save="models_save/fulltext",
+#                       vectorizer_type="tfidf")
 
 # bm25 = FullTextModel(full_input_instances, weights=[3, 2, 1],default_save="models_save/fulltext",vectorizer_type="bm25")
 # fasttext = WordEmbeddingModel(abstract_input_instances, weights=[1,1],embedding_list=["fasttext"],default_save="models_save/wordembeddings",doc_mode="pool",fasttext_path="models_save/fasttext.bin")
 # bm25_fasttext=EnsembleModel(model_list=[bm25,fasttext],weights=[1,1])
 # str2model={"Count":count,"TF-IDF":tfidf,"BM25":bm25,"FastText Embedding":fasttext,"BM25+FastText":bm25_fasttext}
 
-str2model = {"TF-IDF": tfidf}
+# str2model = {"TF-IDF": tfidf}
+str2model={}
 insights = SentenceSearch.load_from_save(save_path="models_save/sentencesearch/-results_save.pkl")
 
 

@@ -1,0 +1,2 @@
+#### Put the paper collections (four .tar.gz files) and medataset csv file under this folder
+You can download them from [COVID-19 Open Research Dataset (CORD-19)](https://pages.semanticscholar.org/coronavirus-research) 

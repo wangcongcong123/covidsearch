@@ -46,7 +46,7 @@ print("Query time: ", time.time() - start)
 ```
 ### Start as a web server
 
-Here just uses the count bag-of-words model as an example. For customisation, have a hack on [app.py](app.py) to easily figure out.
+Here just demonstrating pre-trained insights as an example. For customisation (query search), have a hack on [app.py](app.py) to easily figure out.
 ```
 python app.py
 ```
