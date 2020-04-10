@@ -13,7 +13,7 @@ setup(
     long_description_content_type="text/markdown",
     license="MIT License",
     url="https://github.com/UKPLab/sentence-transformers",
-    download_url="https://github.com/UKPLab/sentence-transformers/archive/v0.2.5.zip",
+    download_url="https://github.com/wangcongcong123/covidsearch/archive/master.zip",
     packages=find_packages(),
     install_requires=[
         "sentence-transformers",
