@@ -94,7 +94,3 @@ def getKaggleTaskInsights():
 
 if __name__ == '__main__':
     app.run(debug=True, host="127.0.0.1")
-
-# curl --header "Content-Type: application/json" --request POST --data '{"task_name":"task1"}' http://127.0.0.1:5000/kaggle_task
-
-curl -i -X POST -H "Content-Type: application/json" -d "{\"task_name\":\"task1\"}" http://127.0.0.1:5000/kaggle_task
