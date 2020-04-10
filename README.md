@@ -66,6 +66,7 @@ Go browser via http://127.0.0.1:5000, the web application is as follows.
 - A GET request example is like this: ``http://127.0.0.1:5000/kaggle_task?task_name=task1``.
 - A POST request example is like this: ``curl -i -X POST -H "Content-Type: application/json" -d "{\"task_name\":\"task1\"}" http://127.0.0.1:5000/kaggle_task``. 
 - Adapt these to Ajax GET/POST request in your case where you want to embed it to your front-end web html pages!
+- Try the live one: https://www.thinkingso.cf/kaggle_task?task_name=task1
 
 ### Contributions
 
