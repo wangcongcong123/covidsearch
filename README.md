@@ -56,7 +56,7 @@ Go browser via http://127.0.0.1:5000, the web application is as follows.
 
 ![](pics/demo.gif)
 
-###Server as service
+### Server as service
 - The server can also be requested in a cross-origin way
 - You set a GET/POST request to obtaining insights by task name
 - A GET request example is like this: ``http://127.0.0.1:5000/kaggle_task?task_name=task1``
