@@ -42,9 +42,12 @@ print("Query time: ", time.time() - start)
 - [Embedding-based search](examples/embedding_run.py) # include fasttext, glove (examples/embedding_run.py).
 - [Model Combinations](examples/ensemble_run.py) # combination of the aforementioned two types (examples/ensemble_run.py).
 
-- [Insights Extraction](examples/insight_extract.py) # this corresponds to tackle [the tasks in kaggle](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks). (examples/ensemble_run.py).
+- [Pre-train Insights](examples/insight_extract.py) # pre-train insights based on [the tasks in kaggle](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks). (examples/insight_from_scratch.py).
 
-Try to run ``python examples/ensemble_run.py`` where a pre-trained insights file is loaded and presented to you.
+- [Insights Extraction](examples/insight_extract.py) # load pre-trained insights by the kaggle tasks. (examples/insight_extract.py).
+
+Try to run ``python examples/insight_extract.py`` where [a pre-trained insights file](models_save/sentencesearch) is loaded and presented to you. If you do not want to use the pre-trained insights, you can pre-train it from scratch by ``python examples/insight_from_scratch.py``. (have a look at [this file](examples/insight_from_scratch.py) to customize the pre-training process).
+
 
 ### Start as a web server
 
