@@ -10,20 +10,12 @@ This repository contains source code for searching covid-19 relevant papers base
 - Enable to combine the aforementioned two types of models.
 - Provide a live web application that can be customized models for end-users.
 
-### [Examples](examples/)
-- [Bag-of-words search](examples/full_text_run.py) # include count, tf-idf, and bm25
-- [Embedding-based search](examples/embedding_run.py) # include fasttext, glove
-- [Model Combinations](examples/ensemble_run.py) # combination of the aforementioned two types
-
-
-- [Insights Extraction](examples/insight_extract.py) # this corresponds to tackle [the tasks in kaggle](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks)
-
 
 ### Quick Start
 ```python
 git clone https://github.com/wangcongcong123/covidsearch.git
 cd covidsearch
-pip install -r requirements.txt
+pip install -e .
 ```
 ```python
 from cord import *
@@ -44,15 +36,32 @@ results = tfidf_model.query(query, top_k=top_k)
 print("Query time: ", time.time() - start)
 # around 0.3 s after re-run (the first time runs more time for object serilisation)
 ```
+
+### [Examples](examples/)
+- [Bag-of-words search](examples/full_text_run.py) # include count, tf-idf, and bm25 (examples/full_text_run.py).
+- [Embedding-based search](examples/embedding_run.py) # include fasttext, glove (examples/embedding_run.py).
+- [Model Combinations](examples/ensemble_run.py) # combination of the aforementioned two types (examples/ensemble_run.py).
+
+- [Insights Extraction](examples/insight_extract.py) # this corresponds to tackle [the tasks in kaggle](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks). (examples/ensemble_run.py).
+
+Try to run ``python examples/ensemble_run.py`` where a pre-trained insights file is loaded and presented to you.
+
 ### Start as a web server
 
-Here just demonstrating pre-trained insights as an example. For customisation (query search), have a hack on [app.py](app.py) to easily figure out.
+Here just demonstrating pre-trained insights as an example. For customisation (query search), have a hack on [app.py](app.py) to easily figure out. Make sure you download the [metadata.csv](https://ai2-semanticscholar-cord-19.s3-us-west-2.amazonaws.com/2020-04-03/metadata.csv) from CORD19 dataset and put it under ./dataset first, then enter:
 ```
 python app.py
 ```
 Go browser via http://127.0.0.1:5000, the web application is as follows.
 
 ![](pics/demo.gif)
+
+###Server as service
+- The server can also be requested in a cross-origin way
+- You set a GET/POST request to obtaining insights by task name
+- A GET request example is like this: ``http://127.0.0.1:5000/kaggle_task?task_name=task1``
+- A POST request example is like this: ``curl -i -X POST -H "Content-Type: application/json" -d "{\"task_name\":\"task1\"}" http://127.0.0.1:5000/kaggle_task``. 
+- Adapt these to Ajax GET/POST request in your case where you want to embed it to your front-end web html pages!
 
 ### Contributions
 

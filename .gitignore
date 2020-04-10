@@ -3,3 +3,4 @@ flair/
 dataset/*.gz
 dataset/*.pkl
 dataset/*.csv
+lite_app.py

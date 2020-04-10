@@ -86,8 +86,15 @@ def hello_world():
 @app.route('/kaggle_task', methods=["GET", "POST"])
 @cross_origin(supports_credentials=True)
 def getKaggleTaskInsights():
-    task_name = request.get_json()["task_name"]
+    if request.method == 'GET':
+        task_name =request.values.get('task_name')
+    else:
+        task_name = request.get_json()["task_name"]
     return json.dumps({"response": "Insights Return", "result": get_insights_results(task_name, top_k=100)})
 
 if __name__ == '__main__':
-    app.run(debug=False, host="0.0.0.0")
+    app.run(debug=True, host="127.0.0.1")
+
+# curl --header "Content-Type: application/json" --request POST --data '{"task_name":"task1"}' http://127.0.0.1:5000/kaggle_task
+
+curl -i -X POST -H "Content-Type: application/json" -d "{\"task_name\":\"task1\"}" http://127.0.0.1:5000/kaggle_task

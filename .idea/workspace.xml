@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f707bb45-9068-44c8-b816-9f8275d68224" name="Default Changelist" comment="" />
+    <list default="true" id="f707bb45-9068-44c8-b816-9f8275d68224" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cord/funcs.py" beforeDir="false" afterPath="$PROJECT_DIR$/cord/funcs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/insight_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/insight_extract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dataset" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -31,11 +41,11 @@
       <recent name="C:\Users\wangc\Desktop\my-open-source\covidsearch\pics" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wangc\Desktop\my-open-source\covidsearch" />
       <recent name="C:\Users\wangc\Desktop\my-open-source\covidsearch\dataset" />
       <recent name="C:\Users\wangc\Desktop\my-open-source\covidsearch\pics" />
       <recent name="C:\Users\wangc\Desktop\my-open-source\covidsearch\models_save\sentencesearch" />
       <recent name="C:\Users\wangc\Desktop\my-open-source\covidsearch\examples" />
-      <recent name="C:\Users\wangc\Desktop\my-open-source\covidsearch" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -92,7 +102,7 @@
       <workItem from="1585589268655" duration="9916000" />
       <workItem from="1585773645989" duration="35000" />
       <workItem from="1586177455344" duration="777000" />
-      <workItem from="1586178620106" duration="15322000" />
+      <workItem from="1586178620106" duration="20023000" />
     </task>
     <servers />
   </component>

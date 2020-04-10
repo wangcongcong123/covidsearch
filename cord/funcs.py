@@ -1,9 +1,10 @@
 __author__="congcong wang"
 
 import json
-import os
+
 import gensim.corpora as corpora
 import gensim
+import os
 from tqdm import tqdm
 import pandas as pd
 import pickle

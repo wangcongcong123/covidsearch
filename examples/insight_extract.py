@@ -6,16 +6,17 @@ dataset_folder = "../dataset/"
 metadata = load_metadata_papers(dataset_folder, "metadata.csv")
 full_papers = load_full_papers(dataset_folder)
 
-kaggle_tasks = {"task1": "What is known about transmission, incubation, and environmental stability?",
-                "task2": "What do we know about COVID-19 risk factors?",
-                "task3": "What do we know about virus genetics, origin, and evolution?",
-                "task4": "What do we know about vaccines and therapeutics?",
-                "task5": "What do we know about non-pharmaceutical interventions?",
-                "task6": "What has been published about medical care?",
-                "task7": "Are there geographic variations in the rate of COVID-19 spread? Are there geographic variations in the mortality rate of COVID-19? there any evidence to suggest geographic based virus mutations?",
-                "task8": "What do we know about diagnostics and surveillance?",
-                "task9": "What has been published about information sharing and inter-sectoral collaboration?",
-                "task10": "What has been published about ethical and social science considerations?"}
+kaggle_tasks = {"task1": "For COVID-19, What is known about transmission, incubation, and environmental stability?",
+                "task2": "For COVID-19, What do we know about COVID-19 risk factors?",
+                "task3": "For COVID-19, What do we know about virus genetics, origin, and evolution?",
+                "task4": "For COVID-19, What do we know about vaccines and therapeutics?",
+                "task5": "For COVID-19, What do we know about non-pharmaceutical interventions?",
+                "task6": "For COVID-19, What has been published about medical care?",
+                "task7": "For COVID-19, Are there geographic variations in the rate of COVID-19 spread? Are there geographic variations in the mortality rate of COVID-19? there any evidence to suggest geographic based virus mutations?",
+                "task8": "For COVID-19, What do we know about diagnostics and surveillance?",
+                "task9": "For COVID-19, What has been published about information sharing and inter-sectoral collaboration?",
+                "task10": "For COVID-19, What has been published about ethical and social science considerations?"}
+
 """
 the file -results_save.pkl is pre-obtained and provided here under models_save/sentencesearch/
 Following is the steps to get the insights file from scratch when needed (this may take a while to complete)

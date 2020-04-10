@@ -6,6 +6,6 @@ pandas
 nltk
 numpy
 scipy
-SentenceTransformer
+sentence-transformers
 flask
 flask_cors
