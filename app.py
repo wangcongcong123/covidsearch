@@ -72,12 +72,24 @@ def get_insights_results(task_name, top_k=20, second_filter=["covid-19"]):
 @app.route('/search', methods=["GET", "POST"])
 @cross_origin(supports_credentials=True)
 def search():
-    query = request.get_json()["query"]
-    model_type = request.get_json()["model_type"]
+    if request.method == 'GET':
+        query =request.values.get('query')
+        model_type = request.values.get('model_type')
+    else:
+        query = request.get_json()["query"]
+        model_type = request.get_json()["model_type"]
+
     if model_type not in str2model:
         return json.dumps({"response": "Not Found", "result": "not found this type of model.."})
     results = str2model[model_type].query(query, top_k=20)
-    return json.dumps({"response": "Search Results", "result": parse_search_results(results)})
+
+    response = app.response_class(
+        response=json.dumps({"response": "Search Results", "result": parse_search_results(results)}),
+        status=200,
+        mimetype='application/json'
+    )
+    return response
+
 @app.route('/')
 def hello_world():
     return render_template('layout.html')
@@ -90,7 +102,14 @@ def getKaggleTaskInsights():
         task_name =request.values.get('task_name')
     else:
         task_name = request.get_json()["task_name"]
-    return json.dumps({"response": "Insights Return", "result": get_insights_results(task_name, top_k=100)})
+
+    response = app.response_class(
+        response=json.dumps({"response": "Insights Return", "result": get_insights_results(task_name, top_k=100)}),
+        status=200,
+        mimetype='application/json'
+    )
+    return response
+
 
 if __name__ == '__main__':
-    app.run(debug=True, host="127.0.0.1")
+    app.run(debug=False, host="0.0.0.0")

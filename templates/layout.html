@@ -146,7 +146,7 @@
                     data: JSON.stringify({"task_name": task_name}),
                     contentType: "application/json",
                     success: function (data) {
-                        var data_obj = JSON.parse(data);
+                        var data_obj = data;
                         var results = data_obj.result;
                         var len = data_obj.result.length;
                         $("#results-title").text(data_obj.response);
@@ -189,7 +189,7 @@
                 data: JSON.stringify({"query": query, "model_type": model_type}),
                 contentType: "application/json",
                 success: function (data) {
-                    var data_obj = JSON.parse(data);
+                    var data_obj = data;
                     var results = data_obj.result;
                     var len = data_obj.result.length;
                     $("#results-title").text(data_obj.response);
