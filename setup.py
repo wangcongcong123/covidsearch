@@ -8,7 +8,7 @@ setup(
     version="0.0.2",
     author="Congcong Wang",
     author_email="wangcongcongcc@gmail.com",
-    description="A customizable platform searching covid-19 relevant papers based on ",
+    description="A customizable platform searching covid-19 relevant papers based on CORD19",
     long_description=readme,
     long_description_content_type="text/markdown",
     license="MIT License",
