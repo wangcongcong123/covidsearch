@@ -52,6 +52,7 @@ Try to run ``python examples/insight_extract.py`` where [a pre-trained insights 
 ### Start as a web server
 
 Here just demonstrating pre-trained insights as an example. For customisation (query search), have a hack on [app.py](app.py) and [templates/layout.html](templates/layout.html) to easily figure out. Make sure you download the [metadata.csv](https://ai2-semanticscholar-cord-19.s3-us-west-2.amazonaws.com/2020-04-03/metadata.csv) from CORD19 dataset and put it under ./dataset first, then enter:
+
 ```
 python app.py
 ```
