@@ -12,7 +12,7 @@ setup(
     long_description=readme,
     long_description_content_type="text/markdown",
     license="MIT License",
-    url="https://github.com/UKPLab/sentence-transformers",
+    url="https://github.com/wangcongcong123/covidsearch",
     download_url="https://github.com/wangcongcong123/covidsearch/archive/master.zip",
     packages=find_packages(),
     install_requires=[
