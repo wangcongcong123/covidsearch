@@ -50,7 +50,7 @@ def load_full_papers(dataset_folder, full_save="full.pkl"):
     return full_papers
 
 
-def load_metadata_papers(dataset_folder, metadata_file, metadata_save="metadata.pkl"):
+def load_metadata_papers(dataset_folder, metadata_file, metadata_save="../datasets/metadata.pkl"):
     """
     load metadata from metadata.csv
     :param dataset_folder: directory where the metadata is in
@@ -60,7 +60,6 @@ def load_metadata_papers(dataset_folder, metadata_file, metadata_save="metadata.
     """
     metadata = {}
     metadata_path = dataset_folder + metadata_file
-    metadata_save = dataset_folder + metadata_save
     if not os.path.exists(metadata_save):
         print("not found", metadata_save, ", hence load from raw metadata file...")
         df = pd.read_csv(metadata_path)
