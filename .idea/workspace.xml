@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f707bb45-9068-44c8-b816-9f8275d68224" name="Default Changelist" comment="" />
+    <list default="true" id="f707bb45-9068-44c8-b816-9f8275d68224" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cord/funcs.py" beforeDir="false" afterPath="$PROJECT_DIR$/cord/funcs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,15 +31,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\wangc\Desktop\my-open-source\covidsearch\pics" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wangc\Desktop\my-open-source\covidsearch" />
       <recent name="C:\Users\wangc\Desktop\my-open-source\covidsearch\dataset" />
       <recent name="C:\Users\wangc\Desktop\my-open-source\covidsearch\pics" />
       <recent name="C:\Users\wangc\Desktop\my-open-source\covidsearch\models_save\sentencesearch" />
       <recent name="C:\Users\wangc\Desktop\my-open-source\covidsearch\examples" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wangc\Desktop\my-open-source\covidsearch\pics" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -50,7 +54,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.insight_extract">
+    <configuration name="insight_extract" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="covidsearch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/insight_extract.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="insight_from_scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="covidsearch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,6 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.insight_extract" />
         <item itemvalue="Python.insight_from_scratch" />
       </list>
     </recent_temporary>
@@ -93,6 +120,8 @@
       <workItem from="1585773645989" duration="35000" />
       <workItem from="1586177455344" duration="777000" />
       <workItem from="1586178620106" duration="20915000" />
+      <workItem from="1586621195194" duration="599000" />
+      <workItem from="1586718123558" duration="246000" />
     </task>
     <servers />
   </component>
@@ -114,5 +143,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/covidsearch$insight_from_scratch.coverage" NAME="insight_from_scratch Coverage Results" MODIFIED="1586285104451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/covidsearch$insight_extract.coverage" NAME="insight_extract Coverage Results" MODIFIED="1586718342261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
   </component>
 </project>

@@ -50,7 +50,7 @@ def load_full_papers(dataset_folder, full_save="full.pkl"):
     return full_papers
 
 
-def load_metadata_papers(dataset_folder, metadata_file, metadata_save="../datasets/metadata.pkl"):
+def load_metadata_papers(dataset_folder, metadata_file, metadata_save="../dataset/metadata.pkl"):
     """
     load metadata from metadata.csv
     :param dataset_folder: directory where the metadata is in
