@@ -8,7 +8,7 @@ This repository contains source code for searching covid-19 relevant papers base
 - Support multiple bag-of-words models (count, tf-idf, bm25).
 - Support semantic search models such as fasttext, glove.
 - Enable to combine the aforementioned two types of models.
-- Provide a live web application that can be customized models for end-users.
+- Provide a live web application that can customize models for end-users.
 
 
 ### Quick Start
